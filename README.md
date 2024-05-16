@@ -19,6 +19,8 @@ Check out the [post](https://testdriven.io/blog/fastapi-react/).
    ```
 
    Navigate to [http://localhost:8000](http://localhost:8000)
+   
+   API documentation [http://localhost:8000/docs](http://localhost:8000/docs)
 
 1. Run the client-side React app in a different terminal window:
 
