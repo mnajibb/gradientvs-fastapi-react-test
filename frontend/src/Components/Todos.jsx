@@ -23,7 +23,7 @@ const TodosContext = React.createContext({
 
 function AddTodo() {
   const [item, setItem] = React.useState("")
-  const {todos, fetchTodos} = React.useContext(TodosContext)
+  const {fetchTodos} = React.useContext(TodosContext)
 
   const handleInput = event  => {
     setItem(event.target.value)
@@ -31,7 +31,6 @@ function AddTodo() {
 
   const handleSubmit = (event) => {
     const newTodo = {
-      "id": todos.length + 1,
       "item": item
     }
 
@@ -151,7 +150,7 @@ export default function Todos() {
       <Stack spacing={5}>
         {
           todos.map((todo) => (
-            <TodoHelper item={todo.item} id={todo.id} fetchTodos={fetchTodos} />
+            <TodoHelper key={todo.id} item={todo.item} id={todo.id} fetchTodos={fetchTodos} />
           ))
         }
       </Stack>
