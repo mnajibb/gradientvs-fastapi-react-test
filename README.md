@@ -31,3 +31,22 @@ Check out the [post](https://testdriven.io/blog/fastapi-react/).
    ```
 
    Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Want to run test on this project?
+
+1. Run the unit test using Jest from terminal window:
+
+   ```sh
+   npm test --prefix frontend/
+   ```
+
+1. Run automated test using serenityjs playwright
+
+   ```sh
+   npm test --prefix test/
+   ```
+
+1. You can see the playwright report after test has been finished on current main repo dir > test > playwright report > index.html
+
+1. You can also see the serenityjs report after test has been finished on current main repo dir > test > target > site > serenity > index.html
+
